@@ -15,7 +15,7 @@ let userNAME
 Main code
 ********************************/
 
-userNAME = propmt("Hello, what is your name");
+userNAME = prompt("Hello, what is your name");
 alert("Hello " + userNAME);
 
 /********************************
