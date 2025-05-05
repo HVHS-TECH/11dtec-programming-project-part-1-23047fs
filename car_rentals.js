@@ -16,7 +16,7 @@ let userCARdays
 
 //Arrays
 let cars = ["BAC Mono", "MX5", "null", "Mini", "Falcon", "null", "Outlander", "Estima"];
-let carSEATS = [1, 2, "null", 4, "null", 5, 7, 8];
+let carSEATS = [1, 2, "null", 4, 5, "null", 7, 8];
 
 /********************************
 Main code
@@ -26,13 +26,10 @@ userWELCOME();
 //userLICENCEcheck();
 findUSERcar();
 
-checkVARIABLES();
-
-
-alert("Hello" + userNAME + "at Rob's Rentals the price is calculated, $50 per day, for the number of seats");
+alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
 userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables])
 
-
+checkVARIABLES();
 
 /********************************
 Functions
