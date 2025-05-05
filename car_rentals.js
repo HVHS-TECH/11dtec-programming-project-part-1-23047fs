@@ -8,7 +8,7 @@ console.log("Running car_rentals.js");
 //Variables
 let userNAME;
 let userAGE = 0;
-let userLICENCE = false;
+//let userLICENCE = false;
 let userCARvariables = 0;
 let userCAR = 0;
 let userRECOMMENDEDcar;
@@ -66,7 +66,7 @@ function userLICENCEcheck() {
 
 
 function findUSERcar() {
-    userCARvariables = prompt("What would be the ideal number of seats in your vehicle " + userNAME);
+    userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle " + userNAME);
     userCARvariables = userCARvariables - 1;
     if (userCARvariables == 2) {
         userCARvariables = 3;
