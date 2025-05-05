@@ -15,7 +15,7 @@ let userRECOMMENDEDcar;
 let userCARdays
 
 //Arrays
-let cars = ["BAC Mono", "null", "MX5", "Mini", "Falcon", "null", "Outlander", "Estima"];
+let cars = ["BAC Mono", "MX5", "null", "Mini", "Falcon", "null", "Outlander", "Estima"];
 let carSEATS = [1, 2, "null", 4, "null", 5, 7, 8];
 
 /********************************
