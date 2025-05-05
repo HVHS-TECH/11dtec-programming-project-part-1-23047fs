@@ -9,13 +9,13 @@ console.log("Running car_rentals.js");
 let userNAME;
 let userAGE = 0;
 let userLICENCE = true;
-let userCARseats = 0;
+let userCARvariables = 0;
 let userCAR = 0;
 let userRECOMMENDEDcar;
 let userCARdays
 
 //Arrays
-let cars = ["BACMono", "null", "MX5", "Mini", "Falcon", "null", "Outlander", "Estima"];
+let cars = ["BAC Mono", "null", "MX5", "Mini", "Falcon", "null", "Outlander", "Estima"];
 let carSEATS = [1, 2, "null", 4, "null", 5, 7, 8];
 
 /********************************
@@ -30,7 +30,7 @@ checkVARIABLES();
 
 
 alert("Hello" + userNAME + "at Rob's Rentals the price is calculated, $50 per day, for the number of seats");
-userCARdays = prompt("How many days would you like to use a " + )
+userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables])
 
 
 
@@ -62,18 +62,18 @@ function userLICENCEcheck() {
 
 
 function findUSERcar() {
-    userCARseats = prompt("What would be the ideal number of seats in your vehicle " + userNAME);
-    userCARseats = userCARseats - 1;
-    if (userCARseats == 2) {
-    userCARseats = 3;
+    userCARvariables = prompt("What would be the ideal number of seats in your vehicle " + userNAME);
+    userCARvariables = userCARvariables - 1;
+    if (userCARvariables == 2) {
+        userCARvariables = 3;
     }
-    if (userCARseats == 5) {
-    userCARseats = 6;
+    if (userCARvariables == 5) {
+        userCARvariables = 6;
     }
 //If req seats are 3 or 6 they round up one
-    userRECOMMENDEDcar = cars[userCARseats];
+    userRECOMMENDEDcar = cars[userCARvariables];
 //Finds recommended car
-    alert("The recommended car that meets your requirements is " + cars[userCARseats] + ", it has " + carSEATS[userCARseats] + " seats");
+    alert("The recommended car that meets your requirements is " + cars[userCARvariables] + ", it has " + carSEATS[userCARvariables] + " seats");
 //Tells user recommended car and its number of seats
 }
 
