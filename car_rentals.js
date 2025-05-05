@@ -33,12 +33,13 @@ Functions
 ********************************/
 function userWELCOME() {
     userNAME = prompt("Hello, what is your name");
-    userAGE = prompt("Hello " + userNAME + ". What is your age");
+    userAGE = prompt("Hello " + userNAME + ", what is your age");
 //Asks user name and age
     userAGE = Number(userAGE);
 //Converts string to number
 }
 
+/*
 function userLICENCEcheck() {
     if (userAGE == 16) {
         userLICENCE = prompt("Please verify if you have a licence, true or false");
@@ -50,6 +51,9 @@ function userLICENCEcheck() {
     }
 //Checks if user has a licence
 }
+*/
+//Can't abort yet so it is redundant
+
 
 function findUSERcar() {
     userCARseats = prompt("What would be the ideal number of seats in your vehicle " + userNAME)
@@ -67,6 +71,7 @@ function findUSERcar() {
 
 function tellUSERrecommendedCAR() {
     alert("The recommended car that meets your requirements is " + cars[userCARseats] + ", it has " + carSEATS[userCARseats] + " seats");
+    alert("Hello" + userNAME + "at Rob's Rentals the price is calculated, per day, for the number of seats");
 //Tells user recommended car and its number of seats
 }
 
