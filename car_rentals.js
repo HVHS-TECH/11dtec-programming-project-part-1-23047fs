@@ -33,7 +33,7 @@ alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of se
 userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
 userCARdays = Number(userCARdays);
 userTOTALprice = userCARdays * (userCARvariables + 1) * rentalPRICE;
-userCARDnumber = prompt("The total cost for " + userCARdays + " days is " + userTOTALprice);
+userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
 
 
 checkVARIABLES();
@@ -85,7 +85,7 @@ function checkVARIABLES() {
     console.log(userNAME);
     console.log(userAGE);
     console.log(userLICENCE);
-    console.log(userCARseats);
+    console.log(userCARvariables);
     console.log(userRECOMMENDEDcar);
     console.log(userCARdays);
     console.log(rentalPRICE);
