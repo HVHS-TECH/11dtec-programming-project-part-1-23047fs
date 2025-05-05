@@ -30,6 +30,8 @@ userWELCOME();
 findUSERcar();
 userCARdaysANDprice()
 
+alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + ", the total cost is $" + userTOTALprice);
+
 checkVARIABLES();
 
 /********************************
