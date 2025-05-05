@@ -28,9 +28,7 @@ Main code
 userWELCOME();
 //userLICENCEcheck();
 findUSERcar();
-
-
-
+userCARdaysANDprice()
 
 checkVARIABLES();
 
@@ -62,7 +60,7 @@ function userLICENCEcheck() {
 
 
 function findUSERcar() {
-    userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle " + userNAME);
+    userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle, 1-8, " + userNAME);
     userCARvariables = userCARvariables - 1;
     if (userCARvariables == 2) {
         userCARvariables = 3;
@@ -91,7 +89,7 @@ function userCARdaysANDprice() {
 function checkVARIABLES() {
     console.log(userNAME);
     console.log(userAGE);
-    console.log(userLICENCE);
+    //console.log(userLICENCE);
     console.log(userCARvariables);
     console.log(userRECOMMENDEDcar);
     console.log(userCARdays);
