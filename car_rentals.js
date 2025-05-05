@@ -12,7 +12,7 @@ let userLICENCE = false;
 let userCARvariables = 0;
 let userCAR = 0;
 let userRECOMMENDEDcar;
-let userCARdays = 1;
+let userCARdays = 0;
 let rentalPRICE = 50;
 let userTOTALprice;
 let userCARDnumber;
@@ -33,6 +33,7 @@ alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of se
 userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
 userCARdays = Number(userCARdays);
 userTOTALprice = userCARdays * rentalPRICE;
+userCARDnumber = prompt("The total cost for " + userCARdays + " days is " + userTOTALprice);
 
 
 checkVARIABLES();
@@ -86,5 +87,9 @@ function checkVARIABLES() {
     console.log(userLICENCE);
     console.log(userCARseats);
     console.log(userRECOMMENDEDcar);
+    console.log(userCARdays);
+    console.log(rentalPRICE);
+    console.log(userTOTALprice);
+    console.log(userCARDnumber);
 //Easy to check if info is right
 }
