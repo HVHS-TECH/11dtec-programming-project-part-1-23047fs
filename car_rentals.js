@@ -32,7 +32,7 @@ findUSERcar();
 alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
 userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
 userCARdays = Number(userCARdays);
-userTOTALprice = userCARdays * rentalPRICE;
+userTOTALprice = userCARdays * (userCARvariables + 1) * rentalPRICE;
 userCARDnumber = prompt("The total cost for " + userCARdays + " days is " + userTOTALprice);
 
 
