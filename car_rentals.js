@@ -8,11 +8,14 @@ console.log("Running car_rentals.js");
 //Variables
 let userNAME;
 let userAGE = 0;
-let userLICENCE = true;
+let userLICENCE = false;
 let userCARvariables = 0;
 let userCAR = 0;
 let userRECOMMENDEDcar;
-let userCARdays
+let userCARdays = 1;
+let rentalPRICE = 50;
+let userTOTALprice;
+let userCARDnumber;
 
 //Arrays
 let cars = ["BAC Mono", "MX5", "null", "Mini", "Falcon", "null", "Outlander", "Estima"];
@@ -27,7 +30,10 @@ userWELCOME();
 findUSERcar();
 
 alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
-userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables])
+userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
+userCARdays = Number(userCARdays);
+userTOTALprice = userCARdays * rentalPRICE;
+
 
 checkVARIABLES();
 
