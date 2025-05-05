@@ -29,11 +29,7 @@ userWELCOME();
 //userLICENCEcheck();
 findUSERcar();
 
-alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
-userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
-userCARdays = Number(userCARdays);
-userTOTALprice = userCARdays * (userCARvariables + 1) * rentalPRICE;
-userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
+
 
 
 checkVARIABLES();
@@ -80,6 +76,17 @@ function findUSERcar() {
     alert("The recommended car that meets your requirements is " + cars[userCARvariables] + ", it has " + carSEATS[userCARvariables] + " seats");
 //Tells user recommended car and its number of seats
 }
+
+function userCARdaysANDprice() {
+    alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
+    userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
+    userCARdays = Number(userCARdays);
+//Converts string to number
+    userTOTALprice = userCARdays * (userCARvariables + 1) * rentalPRICE;
+//Calculates price day * car seats + 1 (cause - 1 for arrays) * rental price
+    userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
+}
+
 
 function checkVARIABLES() {
     console.log(userNAME);
