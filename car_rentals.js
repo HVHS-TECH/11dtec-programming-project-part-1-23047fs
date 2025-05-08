@@ -64,7 +64,10 @@ function userLICENCEcheck() {
 function findUSERcar() {
     userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle, 1-8");
     userCARvariables = userCARvariables - 1;
-    if (userCARvariables >= 3) {
+    if (userCARvariables >= 3 && userCARvariables < 6) {
+        userCARvariables = userCARvariables - 1;
+    }
+    if (userCARvariables >= 6) {
         userCARvariables = userCARvariables - 1;
     }
 
