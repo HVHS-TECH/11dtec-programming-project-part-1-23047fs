@@ -30,7 +30,6 @@ userWELCOME();
 findUSERcar();
 userCARdaysANDprice()
 
-alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
 
 checkVARIABLES();
 
@@ -87,6 +86,10 @@ function userCARdaysANDprice() {
     userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
 }
 
+function userFINALcheck() {
+    alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
+//
+}
 
 function checkVARIABLES() {
     console.log(userNAME);

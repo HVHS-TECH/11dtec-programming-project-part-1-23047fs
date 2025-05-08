@@ -4,6 +4,19 @@ html, body {
 
 #header {
     color: black;
-    size: 50px;
+    size: 70px;
+    justify-self: center;
+}
+
+#mainBUTTON {
+    color: black;
+    size: 30px;
+    justify-self: center;
+    justify-content: center;
+}
+
+.mainBODY {
+    color: black;
+    size: 30px;
     justify-self: center;
 }
