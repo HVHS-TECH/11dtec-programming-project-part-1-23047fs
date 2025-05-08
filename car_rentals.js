@@ -18,8 +18,8 @@ let userTOTALprice;
 let userCARDnumber;
 
 //Arrays
-let cars = ["BAC Mono", "MX5", "null", "Mini", "Falcon", "null", "Outlander", "Estima"];
-let carSEATS = [1, 2, "null", 4, 5, "null", 7, 8];
+let cars = ["BAC Mono", "MX5", "Mini", "Falcon", "Outlander", "Estima"];
+let carSEATS = [1, 2, 4, 5, 7, 8];
 
 /********************************
 Main code
