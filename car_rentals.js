@@ -64,12 +64,10 @@ function userLICENCEcheck() {
 function findUSERcar() {
     userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle, 1-8");
     userCARvariables = userCARvariables - 1;
-    /*if (userCARvariables == 2) {
-        userCARvariables = 3;
+    if (userCARvariables > 3) {
+        userCARvariables = userCARvariables - 2;
     }
-    if (userCARvariables == 5) {
-        userCARvariables = 6;
-    }*/
+
 //If req seats are 3 or 6 they round up one
     userRECOMMENDEDcar = cars[userCARvariables];
 //Finds recommended car
