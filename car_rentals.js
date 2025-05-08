@@ -1,7 +1,7 @@
 /********************************
 Name of task: Rental Car 
 Author: Finley
-Start Date: 01/05/35
+Date: Term 2
 ********************************/
 console.log("Running car_rentals.js");
 
