@@ -67,9 +67,6 @@ function findUSERcar() {
     if (userCARvariables >= 3) {
         userCARvariables = userCARvariables - 1;
     }
-    if (userCARvariables >= 6) {
-        userCARvariables = userCARvariables - 2;
-    }
 
 //If req seats are 3 or 6 they round up one
     userRECOMMENDEDcar = cars[userCARvariables];
