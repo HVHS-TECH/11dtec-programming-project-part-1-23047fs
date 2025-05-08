@@ -25,13 +25,14 @@ let carSEATS = [1, 2, 4, 5, 7, 8];
 Main code
 ********************************/
 
-userWELCOME();
-//userLICENCEcheck();
-findUSERcar();
-userCARdaysANDprice()
-
-
-checkVARIABLES();
+function start() {
+    userWELCOME();
+    //userLICENCEcheck();
+    findUSERcar();
+    userCARdaysANDprice()
+    userFINALcheck()
+    checkVARIABLES();
+}
 
 /********************************
 Functions
@@ -88,7 +89,7 @@ function userCARdaysANDprice() {
 
 function userFINALcheck() {
     alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
-//
+//Final check with user
 }
 
 function checkVARIABLES() {
