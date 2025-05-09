@@ -44,7 +44,7 @@ Functions
 function userWELCOME() {
     userNAME = prompt("Hello, what is your name");
     while (userNAMEinvalid == true) {
-        if (userNAME == null || userNAME == "" || userNAME == " ") {
+        if (userNAME == null || userNAME == "" || userNAME == " " || isNaN(userNAME)) {
             userNAME = prompt("Invalid, what is your name");
         } 
         else {
@@ -110,8 +110,13 @@ function findUSERcar() {
 function userCARdaysANDprice() {
     alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
     userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
-    if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1) {
-        userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
+    while (userCARdaysINVALID == true) {
+        if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1) {
+                userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
+        }
+        else {
+            userCARdaysINVALID = false;
+        }
     }
     userCARdays = Number(userCARdays);
 //Converts string to number
