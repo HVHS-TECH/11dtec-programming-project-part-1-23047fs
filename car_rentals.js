@@ -47,7 +47,7 @@ function userWELCOME() {
     } else {
         userNAMEinvalid = false;
     }
-//Validates user name
+//Validates user name and traps user until a valid name
     userAGE = prompt("Hello " + userNAME + ", what is your age");
 //Asks user name and age
     if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16 || NaN(userAGE)) {
