@@ -12,9 +12,11 @@ let userAGE = 0;
 let userAGEinvalid = true;
 //let userLICENCE = false;
 let userCARvariables = 0;
+let userCARvariablesINVALID = true;
 let userCAR = 0;
 let userRECOMMENDEDcar;
 let userCARdays = 0;
+let userCARdaysINVALID = true;
 let rentalPRICE = 50;
 let userTOTALprice;
 let userCARDnumber;
@@ -44,17 +46,21 @@ function userWELCOME() {
     while (userNAMEinvalid == true) {
         if (userNAME == null || userNAME == "" || userNAME == " ") {
             userNAME = prompt("Invalid, what is your name");
-        } else {
+        } 
+        else {
         userNAMEinvalid = false;
         }
     }
 //Validates user name and traps user until a valid name
     userAGE = prompt("Hello " + userNAME + ", what is your age");
 //Asks user name and age
-    while (userAGEinvalid = true) {
-    if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16) {
-        userAGE = prompt("Invalid, what is your age");
-    }
+    while (userAGEinvalid == true) {
+        if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16) {
+            userAGE = prompt("Invalid, what is your age");
+        }
+        else {
+        userAGEinvalid = false;
+        }
     }
     userAGE = Number(userAGE);
 //Converts string to number
@@ -78,8 +84,13 @@ function userLICENCEcheck() {
 
 function findUSERcar() {
     userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle (1-8)");
-    if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables <= 9) {
-        userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
+    while (userCARvariablesINVALID == true) {
+        if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables <= 9) {
+            userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
+        }
+        else {
+            userCARvariablesINVALID = false;
+        }
     }
     userCARvariables = userCARvariables - 1;
     if (userCARvariables >= 3 && userCARvariables < 6) {
