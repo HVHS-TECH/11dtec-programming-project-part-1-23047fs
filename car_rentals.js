@@ -39,13 +39,13 @@ Functions
 ********************************/
 function userWELCOME() {
     userNAME = prompt("Hello, what is your name");
-    if (userNAME == null || userNAME == "" || userNAME == " ") {
+    if (userNAME == null || userNAME == "" || userNAME == " " || !NaN(userNAME)) {
         userNAME = prompt("Invalid, what is your name");
     }
 //Validates user name
     userAGE = prompt("Hello " + userNAME + ", what is your age");
 //Asks user name and age
-    if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16) {
+    if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16 || NaN(userAGE)) {
         userAGE = prompt("Invalid, what is your age");
     }
     userAGE = Number(userAGE);
