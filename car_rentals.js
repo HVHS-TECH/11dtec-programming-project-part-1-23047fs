@@ -85,7 +85,7 @@ function userLICENCEcheck() {
 function findUSERcar() {
     userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle (1-8)");
     while (userCARvariablesINVALID == true) {
-        if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables >= 9 || isNaN(userNAME)) {
+        if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables >= 9 || isNaN(userCARvariables)) {
             userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
         }
         else {
@@ -111,7 +111,7 @@ function userCARdaysANDprice() {
     alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
     userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
     while (userCARdaysINVALID == true) {
-        if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1 || isNaN(userNAME)) {
+        if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1 || isNaN(userCARdays)) {
                 userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
         }
         else {
