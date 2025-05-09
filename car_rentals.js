@@ -31,7 +31,6 @@ function start() {
     findUSERcar();
     userCARdaysANDprice();
     userFINALcheck();
-    userVALIDATION();
     checkVARIABLES();
 }
 
@@ -40,8 +39,15 @@ Functions
 ********************************/
 function userWELCOME() {
     userNAME = prompt("Hello, what is your name");
+    if (userNAME == null || userNAME == "" || userNAME == " ") {
+        userNAME = prompt("Invalid, what is your name");
+    }
+//Validates user name
     userAGE = prompt("Hello " + userNAME + ", what is your age");
 //Asks user name and age
+    if (userAGE == null || userAGE == "" || userAGE == " ") {
+        userAGE = prompt("Invalid, what is your age");
+    }
     userAGE = Number(userAGE);
 //Converts string to number
 }
@@ -64,6 +70,9 @@ function userLICENCEcheck() {
 
 function findUSERcar() {
     userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle (1-8)");
+    if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables <= 9) {
+        userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
+    }
     userCARvariables = userCARvariables - 1;
     if (userCARvariables >= 3 && userCARvariables < 6) {
         userCARvariables = userCARvariables - 1;
@@ -82,6 +91,9 @@ function findUSERcar() {
 function userCARdaysANDprice() {
     alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
     userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
+    if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1) {
+        userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
+    }
     userCARdays = Number(userCARdays);
 //Converts string to number
     userTOTALprice = userCARdays * (userCARvariables + 1) * rentalPRICE;
@@ -92,22 +104,6 @@ function userCARdaysANDprice() {
 function userFINALcheck() {
     alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
 //Final check with user
-}
-
-function userVALIDATION() {
-    if (userNAME == null || userNAME == "" || userNAME == " ") {
-        userNAME = prompt("Invalid, what is your name");
-    }
-    if (userAGE == null || userAGE == "" || userAGE == " ") {
-        userAGE = prompt("Invalid, what is your age");
-    }
-    if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables <= 9) {
-        userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
-    }
-    if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1) {
-        userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
-    }
-//Validates all variables that the user inputs
 }
 
 function checkVARIABLES() {
