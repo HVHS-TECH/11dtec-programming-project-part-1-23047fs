@@ -45,7 +45,7 @@ function userWELCOME() {
 //Validates user name
     userAGE = prompt("Hello " + userNAME + ", what is your age");
 //Asks user name and age
-    if (userAGE == null || userAGE == "" || userAGE == " ") {
+    if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16) {
         userAGE = prompt("Invalid, what is your age");
     }
     userAGE = Number(userAGE);
