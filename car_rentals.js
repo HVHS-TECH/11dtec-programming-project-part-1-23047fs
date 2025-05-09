@@ -7,6 +7,7 @@ console.log("Running car_rentals.js");
 
 //Variables
 let userNAME;
+let userNAMEinvalid = true;
 let userAGE = 0;
 //let userLICENCE = false;
 let userCARvariables = 0;
@@ -38,9 +39,13 @@ function start() {
 Functions
 ********************************/
 function userWELCOME() {
-    userNAME = prompt("Hello, what is your name");
-    if (userNAME == null || userNAME == "" || userNAME == " " || !NaN(userNAME)) {
-        userNAME = prompt("Invalid, what is your name");
+    while (userNAMEinvalid == true) {
+        userNAME = prompt("Hello, what is your name");
+        if (userNAME == null || userNAME == "" || userNAME == " " || !NaN(userNAME)) {
+            userNAME = prompt("Invalid, what is your name");
+        }
+    } else {
+        userNAMEinvalid = false;
     }
 //Validates user name
     userAGE = prompt("Hello " + userNAME + ", what is your age");
