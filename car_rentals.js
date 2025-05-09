@@ -107,7 +107,7 @@ function userVALIDATION() {
     if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1) {
         userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
     }
-//Validates all variables that user 
+//Validates all variables that the user inputs
 }
 
 function checkVARIABLES() {
