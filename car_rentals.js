@@ -29,8 +29,9 @@ function start() {
     userWELCOME();
     //userLICENCEcheck();
     findUSERcar();
-    userCARdaysANDprice()
-    userFINALcheck()
+    userCARdaysANDprice();
+    userFINALcheck();
+    userVALIDATION();
     checkVARIABLES();
 }
 
@@ -91,6 +92,22 @@ function userCARdaysANDprice() {
 function userFINALcheck() {
     alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
 //Final check with user
+}
+
+function userVALIDATION() {
+    if (userNAME == null || userNAME == "" || userNAME == " ") {
+        userNAME = prompt("Invalid, what is your name");
+    }
+    if (userAGE == null || userAGE == "" || userAGE == " ") {
+        userAGE = prompt("Invalid, what is your age");
+    }
+    if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables <= 9) {
+        userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
+    }
+    if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1) {
+        userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
+    }
+//Validates all variables that user 
 }
 
 function checkVARIABLES() {
