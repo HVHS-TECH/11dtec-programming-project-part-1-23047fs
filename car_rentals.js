@@ -85,7 +85,7 @@ function userLICENCEcheck() {
 function findUSERcar() {
     userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle (1-8)");
     while (userCARvariablesINVALID == true) {
-        if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables <= 9 || isNaN(userNAME)) {
+        if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables >= 9 || isNaN(userNAME)) {
             userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
         }
         else {
