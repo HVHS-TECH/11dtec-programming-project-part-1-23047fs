@@ -55,7 +55,7 @@ function userWELCOME() {
     userAGE = prompt("Hello " + userNAME + ", what is your age");
 //Asks user name and age
     while (userAGEinvalid == true) {
-        if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16 || isNaN(userAGE)) {
+        if (userAGE == null || userAGE == "" || userAGE == " " || userAGE <= 16 || isNaN(userAGE)) {
             userAGE = prompt("Invalid, what is your age");
         }
         else {
