@@ -6,6 +6,7 @@ Date: Term 2
 console.log("Running car_rentals.js");
 
 //Variables
+const rentalPRICE = 50;
 let userNAME;
 let userNAMEinvalid = true;
 let userAGE = 0;
@@ -17,7 +18,6 @@ let userCAR = 0;
 let userRECOMMENDEDcar;
 let userCARdays = 0;
 let userCARdaysINVALID = true;
-let rentalPRICE = 50;
 let userTOTALprice;
 let userCARDnumber;
 
