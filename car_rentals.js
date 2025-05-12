@@ -107,7 +107,7 @@ function findUSERcar() {
 //Tells user recommended car and its number of seats
 }
 
-//Number of days, price, 
+//Number of days, price, card
 function userCARdaysANDprice() {
     alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
     userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
@@ -126,11 +126,13 @@ function userCARdaysANDprice() {
     userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
 }
 
+//Final check
 function userFINALcheck() {
     alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
 //Final check with user
 }
 
+//Displays variables
 function checkVARIABLES() {
     console.log(userNAME);
     console.log(userAGE);
