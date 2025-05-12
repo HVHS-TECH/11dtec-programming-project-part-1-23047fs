@@ -41,6 +41,7 @@ function start() {
 /********************************
 Functions
 ********************************/
+//Welcomes user, user name, user age
 function userWELCOME() {
     userNAME = prompt("Hello, what is your name");
     while (userNAMEinvalid == true) {
@@ -81,7 +82,7 @@ function userLICENCEcheck() {
 */
 //Can't abort yet so it is redundant
 
-
+//What car, seats
 function findUSERcar() {
     userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle (1-8)");
     while (userCARvariablesINVALID == true) {
@@ -99,7 +100,6 @@ function findUSERcar() {
         userCARvariables = userCARvariables - 2;
     }
 //Calculates what seat and it is (prob complicated because of me and it goes 1,2,4,5,7,8 and it starts at 0)
-
 //If req seats are 3 or 6 they round up one
     userRECOMMENDEDcar = cars[userCARvariables];
 //Finds recommended car
@@ -107,6 +107,7 @@ function findUSERcar() {
 //Tells user recommended car and its number of seats
 }
 
+//Number of days, price, 
 function userCARdaysANDprice() {
     alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
     userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
