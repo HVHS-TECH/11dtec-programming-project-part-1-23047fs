@@ -121,13 +121,7 @@ function userCARdaysANDprice() {
     }
     userCARdays = Number(userCARdays);
 //Converts string to number
-    if (userCARvariables >= 3 && userCARvariables < 6) {
-        userCARvariables = userCARvariables + 1;
-    } else if (userCARvariables >= 5) {
-        userCARvariables = userCARvariables + 2;
-    }
-//Fixes the money calculation promblem
-    userTOTALprice = userCARdays * (userCARvariables + 1) * rentalPRICE;
+    userTOTALprice = userCARdays * (userCARvariables + 2) * rentalPRICE;
 //Calculates price day * car seats + 1 (cause - 1 for arrays) * rental price
     userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
 }
