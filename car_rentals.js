@@ -122,7 +122,7 @@ function userCARdaysANDprice() {
     userCARdays = Number(userCARdays);
 //Converts string to number
     userCARvariables = userCARvariables + 1;
-    if (userCARvariables >= 3 && userCARvariables < 6) {
+    if (userCARvariables >= 3 && userCARvariables < 5) {
         userCARvariables = userCARvariables + 1;
     } else if (userCARvariables >= 5) {
         userCARvariables = userCARvariables + 2;
