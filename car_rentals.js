@@ -35,7 +35,7 @@ function start() {
     findUSERcar();
     userCARdaysANDprice();
     userFINALcheck();
-    checkVARIABLES();
+    //checkVARIABLES();
 }
 
 /********************************
