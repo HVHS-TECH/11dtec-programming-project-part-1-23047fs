@@ -121,8 +121,8 @@ function userCARdaysANDprice() {
     }
     userCARdays = Number(userCARdays);
 //Converts string to number
-    userTOTALprice = userCARdays * (userCARvariables + 2) * rentalPRICE;
-    console.log("check " + userCARvariables)
+    userTOTALprice = userCARdays * (userCARvariables + 1) * rentalPRICE;
+    console.log("check " + userCARvariables);
 //Calculates price day * car seats + 1 (cause - 1 for arrays) * rental price
     userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
 }
