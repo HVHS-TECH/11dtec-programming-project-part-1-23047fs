@@ -42,6 +42,13 @@ function start() {
 Functions
 ********************************/
 //Welcomes user, user name, user age
+function displayAVALABLEcars() {
+    for (i = 0; i < cars.length; i++){
+        avalableCARS = avalableCARS + "\n " + (i + 1) + " is " + chocolate[i] + " it costs $" + chocolatePRICE[i];
+    }
+}
+
+
 function userWELCOME() {
     userNAME = prompt("Hello, what is your name");
     while (userNAMEinvalid == true) {
