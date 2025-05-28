@@ -37,7 +37,7 @@ function start() {
     findUSERcar();
     userCARdaysANDprice();
     userFINALcheck();
-    //checkVARIABLES();
+    checkVARIABLES();
 }
 
 /********************************
@@ -160,5 +160,6 @@ function checkVARIABLES() {
     console.log(rentalPRICE);
     console.log(userTOTALprice);
     console.log(userCARDnumber);
+    console.log(avalableCARS);
 //Easy to check if info is right
 }
