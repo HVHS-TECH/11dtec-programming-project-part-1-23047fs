@@ -30,6 +30,7 @@ Main code
 ********************************/
 
 function start() {
+    displayAVALABLEcars()
     userWELCOME();
     //userLICENCEcheck();
     findUSERcar();
@@ -44,7 +45,7 @@ Functions
 //Welcomes user, user name, user age
 function displayAVALABLEcars() {
     for (i = 0; i < cars.length; i++){
-        avalableCARS = avalableCARS + "\n " + (i + 1) + " is " + chocolate[i] + " it costs $" + chocolatePRICE[i];
+        avalableCARS = avalableCARS + "\nCar " + (i + 1) + " is " + cras[i] + " it has " + carSEATS[i] + " seats.";
     }
 }
 
