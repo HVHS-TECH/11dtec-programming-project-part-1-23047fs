@@ -20,6 +20,7 @@ let userCARdays = 0;
 let userCARdaysINVALID = true;
 let userTOTALprice;
 let userCARDnumber;
+let avalableCARS;
 
 //Arrays
 let cars = ["BAC Mono", "MX5", "Mini", "Falcon", "Outlander", "Estima"];
@@ -45,7 +46,7 @@ Functions
 //Welcomes user, user name, user age
 function displayAVALABLEcars() {
     for (i = 0; i < cars.length; i++){
-        avalableCARS = avalableCARS + "\nCar " + (i + 1) + " is " + cras[i] + " it has " + carSEATS[i] + " seats.";
+        avalableCARS = avalableCARS + "\nCar " + (i + 1) + " is " + cars[i] + " it has " + carSEATS[i] + " seats.";
     }
 }
 
