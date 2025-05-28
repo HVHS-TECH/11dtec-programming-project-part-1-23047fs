@@ -29,9 +29,9 @@ let carSEATS = [1, 2, 4, 5, 7, 8];
 /********************************
 Main code
 ********************************/
+displayAVALABLEcars()
 
 function start() {
-    displayAVALABLEcars()
     userWELCOME();
     //userLICENCEcheck();
     findUSERcar();
