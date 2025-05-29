@@ -29,7 +29,10 @@ let carSEATS = [1, 2, 4, 5, 7, 8];
 /********************************
 Main code
 ********************************/
-displayAVALABLEcars()
+function autoSTART() {
+    displayAVALABLEcars();
+    console.log("running auto start");
+}
 
 function start() {
     userWELCOME();
@@ -46,8 +49,11 @@ Functions
 //Welcomes user, user name, user age
 function displayAVALABLEcars() {
     for (i = 0; i < cars.length; i++){
-        avalableCARS = avalableCARS + "\nCar " + (i + 1) + " is " + cars[i] + " it has " + carSEATS[i] + " seats.";
+        var carThing = "Hello I am a car"
+        avalableCARS = `avalableCARS + "\nCar " ${carThing} + (i + 1) + " is " + cars[i] + " it has " + carSEATS[i] + " seats."`;
     }
+    document.getElementById("avalableCARS").innerHTML = avalableCARS;
+    console.log(avalableCARS);
 }
 
 
@@ -160,6 +166,5 @@ function checkVARIABLES() {
     console.log(rentalPRICE);
     console.log(userTOTALprice);
     console.log(userCARDnumber);
-    console.log(avalableCARS);
 //Easy to check if info is right
 }

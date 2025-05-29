@@ -3,16 +3,18 @@
 <head>
   <title>Bob's Rentals</title>
   <meta charset="UTF-8">
-
-  <!-- stylesheets *******************************************-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- stylesheets *******************************************-->
   <link rel="stylesheet" href="style.css">
+<!-- Script *******************************************-->
+  <script src="car_rentals.js"></script>
+
 </head>
 
 <!--*************************************************************
   BODY
 **************************************************************-->
-
-<body>
+<body onload="autoSTART();">
 <!--Connects javascript to html-->
   <h1 id="header">Bob's Rentals</h1>
   <p class="mainBODY">At Bob's rentals we have many different sized cars, ranging from 1 seat to 8 seats.</p>
@@ -21,13 +23,11 @@
     <button id="mainBUTTON" onclick="start()">Rent a Car</button>
   </div>
 <!--Button that plays start func on click-->
-  <h1 id="avalable-cars">No input</h1>
-
-  <script src="car_rentals.js">
-    document.getElementById("avalable-cars").innerHTML = avalableCARS;
-  </script>
+  <h1 id="avalableCARS">Wait</h1>
 
 </body>
 </html>
-
+<!--*************************************************************
+  END OF HTML
+**************************************************************-->
 
