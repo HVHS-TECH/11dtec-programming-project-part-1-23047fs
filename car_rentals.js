@@ -51,6 +51,7 @@ function displayAVALABLEcars() {
     for (i = 0; i < cars.length; i++){
         avalableCARS = `${avalableCARS} <br> \nCar ${(i + 1)} is ${cars[i]} it has ${carSEATS[i]} seats`;
     }
+//`` makes it html and ${} turns it back to javascript
     document.getElementById("avalableCARS").innerHTML = avalableCARS;
     console.log(avalableCARS);
 }
