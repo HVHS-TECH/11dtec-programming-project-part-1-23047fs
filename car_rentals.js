@@ -49,8 +49,7 @@ Functions
 //Welcomes user, user name, user age
 function displayAVALABLEcars() {
     for (i = 0; i < cars.length; i++){
-        var carThing = "Hello I am a car"
-        avalableCARS = `avalableCARS + "\nCar " ${carThing} + (i + 1) + " is " + cars[i] + " it has " + carSEATS[i] + " seats."`;
+        avalableCARS = `${avalableCARS} <br> \nCar ${(i + 1)} is ${cars[i]} it has ${carSEATS[i]} seats`;
     }
     document.getElementById("avalableCARS").innerHTML = avalableCARS;
     console.log(avalableCARS);
